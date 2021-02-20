@@ -1,0 +1,361 @@
+
+/*MAIN PAGE STYLE------------------------------------------------------------------------------------------*/
+header {
+	margin:0;
+	padding-top:3vh;
+	padding-bottom:2vh;
+	background-color:#828282;
+}
+body {
+	margin:0;
+	padding:0;
+	background-color:#828282;
+}
+footer {
+	margin:0;
+	padding-top:6vh;
+	padding-bottom:2vh;
+	position:fixed;
+	bottom:5px;
+}
+#footer_links_block {
+	position:relative;
+}
+.footer_links {
+	position:relative;
+	margin-left:5px;
+	padding-right:4px;
+	padding-bottom:2px;
+	padding-left:7px;
+	padding-top:11px;
+	background-color:#828282;
+	border-radius:50px;
+	box-shadow: 2px 0px 6px rgba(0, 0, 0, .4);
+}
+/*GAMBURGER MENU-------------------------------------------*/
+#menu__toggle {
+  opacity: 0;
+}
+
+#menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+  visibility: visible;
+  right: 0;
+}
+
+.menu__btn {
+  display: flex;
+  align-items: center;
+  position: absolute;
+	top:50px;
+  right: 5%;
+  width: 30px;
+  height: 30px;
+  background-color: #828282;
+  cursor: pointer;
+  z-index: 1;
+  border-radius:50px;
+  box-shadow: 2px 0px 6px rgba(0, 0, 0, .4);
+  overflow:hidden;
+}
+
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  transition-duration: .25s;
+}
+.menu__btn > span::before {
+  content: '';
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: '';
+  top: 8px;
+}
+
+.menu__box {
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  right: -100%;
+
+  width: 200px;
+  height: 60px;
+
+  margin: 0;
+  padding: 40px 0;
+
+  list-style: none;
+	border-radius: 500px;
+  background-color: #828282;
+  box-shadow: 2px 0px 6px rgba(0, 0, 0, .4);
+
+  transition-duration: .25s;
+}
+
+.menu__item {
+  display: block;
+  padding: 6px 24px;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+  transition-duration: .25s;
+}
+.menu__item:hover {
+  background-color: #CFD8DC;
+}
+/*SUPER THIN DISPLAY----------------------------------------------*/
+@media (max-width: 670px) {
+#mikhailbuslaev {
+	color:white;
+	font-family:"Roboto";
+	position:absolute;
+	left:10%;
+	top:50px;
+	font-size:14pt;
+	text-decoration:none;
+}
+#myaccount {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+#works {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+#aboutme {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+}
+/*THIN DISPLAY----------------------------------------------*/
+@media (min-width:670px) and (max-width:1000px) {
+#mikhailbuslaev {
+	color:white;
+	font-family:"Roboto";
+	position:absolute;
+	left:10%;
+	top:50px;
+	font-size:14pt;
+	text-decoration:none;
+}
+#works {
+	color:white;
+	font-family:"Roboto";
+	position:absolute;
+	left:13%;
+	top:85px;
+	font-size:10pt;
+	text-decoration:none;
+}
+#aboutme {
+	color:white;
+	font-family:"Roboto";
+	position:absolute;
+	left:13%;
+	top:105px;
+	font-size:10pt;
+	text-decoration:none;
+}
+.menu__item {
+	position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+.menu__box {
+	position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+#menu__toggle {
+	position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;	
+}
+.menu__btn {
+	position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+}
+/*WIDE DISPLAY---------------------------------------------*/
+@media (min-width: 1000px) {
+#mikhailbuslaev {
+	color:white;
+	font-family:"Roboto";
+	position:absolute;
+	left:10%;
+	top:50px;
+	font-size:18pt;
+	text-decoration:none;
+}
+#works {
+	color:white;
+	font-family:"Roboto";
+	position:absolute;
+	left:13%;
+	top:85px;
+	font-size:12pt;
+	text-decoration:none;
+}
+#aboutme {
+	color:white;
+	font-family:"Roboto";
+	position:absolute;
+	left:13%;
+	top:105px;
+	font-size:12pt;
+	text-decoration:none;
+}
+.menu__item {
+	position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+.menu__box {
+	position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+#menu__toggle {
+	position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;	
+}
+.menu__btn {
+	position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+}
+@media (max-aspect-ratio:10/14) {
+#cut_image {
+	height:75vh;
+	overflow:hidden;
+}
+#uncut_image {
+	height:80vh;
+	position:static;
+	margin-left: -10vw;
+}
+}
+@media (min-aspect-ratio:10/14) {
+#cut_image {
+	width:100%;
+	height:auto;
+}
+#uncut_image {
+	width:100%;
+	height:auto;
+}
+}
+/*---------------------------------------------------------*/
+/*ABOUT ME PAGE STYLE------------------------------------------------------------------------------------------*/
+#block_of_my_profile_photo {
+	text-align:center;
+}
+#my_profile_photo {
+	width:250px;
+	height:250px;
+	border-radius:250px;
+}
+#my_profile_text {
+	position:relative;
+	margin-left:10vw;
+	margin-right:10vw;
+	width:80vw;
+	color:white;
+	font-family:"Roboto";
+	font-size:16pt;
+	text-decoration:none;
+}
+.links {
+	position:relative;
+	margin-left:15%;
+	color:white;
+	font-family:"Roboto";
+	font-size:12pt;
+	text-decoration:none;
+}
+.links_icons {
+	width:20px;
+	height:20px;
+	position:relative;
+	margin-right:2px;
+}
+/*WORKS PAGE STYLE------------------------------------------------------------------------------------------*/
