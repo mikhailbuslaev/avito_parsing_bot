@@ -1,7 +1,7 @@
 <?php
 header('refresh: 60');//REFRESH OF QUERY
 include "functions.php";
-$token='2038362504:AAECSDSnzU3w3awKr9c6Go6LqcuvT_6dhv0';
+$token='';
 //-------------------------------------DB CONNECT-------------------------------------------------------//
 $pdo=db_connect();
 ////////////////////////////////////////TELEGRAM EXCHANGE///////////////////////////////////////////////////////
