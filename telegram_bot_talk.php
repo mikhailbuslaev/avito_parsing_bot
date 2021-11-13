@@ -1,5 +1,4 @@
 <?php
-include "functions.php";
 function telegram_messenger($token) {
     $bot_data=file_get_contents('https://api.telegram.org/bot'.$token.'/getUpdates');
     $bot_data=json_decode($bot_data);
