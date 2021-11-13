@@ -94,7 +94,6 @@ function put_data($pdo, $data, $recipients, $token) {
             //----------------------------------------------TELEGRAM MESSAGE SENDING--------------------------//
             $recipients_count=count($recipients);
             for ($j=0; $j < $recipients_count; $j++) { 
-                echo 'aaaaa ';
                 sendMessage(array("chat_id" => $recipients[$j][recipient_id], "text" => $data[$i]['reference'].' '.$data[$i]['price'].' руб'), $token);
             }
     
